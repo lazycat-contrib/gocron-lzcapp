@@ -1,0 +1,15 @@
+package: cloud.lazycat.app.gocron
+version: 0.1.7
+name: GoCron
+description: "一个任务调度程序"
+min_os_version: "1.5.0"
+homepage: https://github.com/flohoss/gocron
+author: flohoss
+
+locales:
+  zh:
+    name: GoCron
+    description: "一个任务调度程序"
+  en:
+    name: GoCron
+    description: "A task scheduler"

@@ -1,22 +1,15 @@
-lzc-sdk-version: "0.1"
-name: GoCron
-package: cloud.lazycat.app.gocron
-version: 0.1.7
-description: 一个任务调度程序
-homepage: https://github.com/flohoss/gocron
-author: flohoss
 application:
   subdomain: gocron
   background_task: true
   multi_instance: false
-  gpu_accel: false
-  kvm_accel: false
-  usb_accel: false
-  routes:
-    - /=http://gocron.cloud.lazycat.app.gocron.lzcapp:8156/
+  upstreams:
+    - location: /
+      backend: http://gocron.cloud.lazycat.app.gocron.lzcapp:8156/
+
 services:
   gocron:
-    image: registry.lazycat.cloud/czyt/flohoss/gocron:90eeff9f4af462dd
+    # upstream: ghcr.io/flohoss/gocron:v0.1.7
+    image: ghcr.io/flohoss/gocron:v0.1.7
     environment:
       - TZ=Asia/Shanghai
     binds:
