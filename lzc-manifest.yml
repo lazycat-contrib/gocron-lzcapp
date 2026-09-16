@@ -5,11 +5,10 @@ application:
   upstreams:
     - location: /
       backend: http://gocron.cloud.lazycat.app.gocron.lzcapp:8156/
-
 services:
   gocron:
-    # upstream: ghcr.io/flohoss/gocron:v0.1.7
-    image: ghcr.io/flohoss/gocron:v0.1.7
+    # upstream: ghcr.io/flohoss/gocron:v0.11.0
+    image: registry.lazycat.cloud/czyt/flohoss/gocron:efcf6448c378ec48
     environment:
       - TZ=Asia/Shanghai
     binds:
