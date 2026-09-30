@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.gocron
-version: 0.12.0
+version: 0.13.1
 name: GoCron
 description: "一个任务调度程序"
 min_os_version: "1.5.0"
