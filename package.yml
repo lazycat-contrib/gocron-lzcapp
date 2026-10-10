@@ -1,4 +1,5 @@
 package: cloud.lazycat.app.gocron
+license: MIT
 version: 0.13.2
 name: GoCron
 description: "一个任务调度程序"
