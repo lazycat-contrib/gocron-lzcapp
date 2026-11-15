@@ -7,8 +7,8 @@ application:
       backend: http://gocron.cloud.lazycat.app.gocron.lzcapp:8156/
 services:
   gocron:
-    # upstream: ghcr.io/flohoss/gocron:v0.14.2
-    image: registry.lazycat.cloud/czyt/flohoss/gocron:406facbcdd8cafdb
+    # upstream: ghcr.io/flohoss/gocron:v0.14.3
+    image: registry.lazycat.cloud/czyt/flohoss/gocron:b48b2bdcb1b85fe5
     environment:
       - TZ=Asia/Shanghai
     binds:
